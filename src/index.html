@@ -13,7 +13,10 @@
   <body>
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="POST" autocomplete="off">
+      method="POST"
+      autocomplete="off"
+      onsubmit="onSubmit()"
+      >
       <fieldset class="field">
         <legend>Personal information</legend>
         <label class="form-field" for="surname">
@@ -172,7 +175,6 @@
       </fieldset>
       <button
         type="submit"
-        onsubmit="onSubmit()"
       >
         Submit
       </button>
